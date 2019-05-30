@@ -1,2 +1,2 @@
 # lotterypp
-Lottery C++ Framework
+Lottery C++ Library
