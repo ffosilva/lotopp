@@ -22,6 +22,9 @@ namespace lotopp
  * NOTE: if k > n, then a 0 is returned.
  */
 unsigned long comb(unsigned long n, unsigned long k);
+
+unsigned int ordx(unsigned int *idx, size_t idx_len);
+unsigned int xord(unsigned int sk, unsigned int *idx, size_t idx_len);
 } // namespace lotopp
 
 #endif

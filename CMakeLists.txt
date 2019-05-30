@@ -13,13 +13,18 @@ include_directories(${LOTOPP_INCLUDE_DIR})
 
 add_library(lotopp SHARED ${src})
 
+link_libraries(lotopp)
 add_executable(test_comb ${CMAKE_CURRENT_SOURCE_DIR}/test/test_comb.cpp)
-target_link_libraries(test_comb lotopp)
+add_executable(test_ord ${CMAKE_CURRENT_SOURCE_DIR}/test/test_ord.cpp)
+
+enable_testing()
+add_test(test_comb test_comb)
+add_test(test_ord test_ord)
 
 install(TARGETS lotopp
         DESTINATION lib
 )
 
-install(TARGETS test_comb
+install(TARGETS test_comb test_ord
         DESTINATION bin
 )
