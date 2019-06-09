@@ -1,14 +1,14 @@
 /**
  * Lottery C++ Library
- * Filename: utils.hpp
+ * Filename: combinador.hpp
  * 
- * This file contains utility functions
+ * This file contains combinador header
  * 
  * Author: Fábio Silva <fabio.fernando.osilva@gmail.com>
  */
 
-#ifndef _COMBINADOR_HPP_
-#define _COMBINADOR_HPP_
+#ifndef LOTOPP_COMBINADOR_HPP
+#define LOTOPP_COMBINADOR_HPP
 
 #include <mutex>
 
@@ -32,4 +32,4 @@ public:
 };
 } // namespace lotopp
 
-#endif
+#endif // _LOTOPP_COMBINADOR_HPP_

@@ -1,3 +1,14 @@
+/**
+ * Lottery C++ Library
+ * Filename: combinador.cpp
+ * 
+ * This file contains combinador implementation
+ * 
+ * Author: Fábio Silva <fabio.fernando.osilva@gmail.com>
+ */
+
+#include <mutex>
+
 #include "lotopp/utils.hpp"
 #include "lotopp/combinador.hpp"
 
@@ -11,7 +22,7 @@ combinador::combinador(int quantidade_dezenas, int tamanho_cartao)
 {
 }
 
-int combinador::num_combinacoes() 
+int combinador::num_combinacoes()
 {
   return _num_combinacoes;
 }

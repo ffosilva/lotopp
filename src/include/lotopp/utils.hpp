@@ -2,7 +2,7 @@
  * Lottery C++ Library
  * Filename: utils.hpp
  * 
- * This file contains utility functions
+ * This file contains utility functions header
  * 
  * Author: Fábio Silva <fabio.fernando.osilva@gmail.com>
  */
@@ -29,4 +29,4 @@ unsigned int ordx(unsigned int *idx, size_t idx_len);
 unsigned int xord(unsigned int sk, unsigned int *idx, size_t idx_len);
 } // namespace lotopp
 
-#endif
+#endif // LOTOPP_UTILS_HPP

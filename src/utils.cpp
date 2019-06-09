@@ -1,14 +1,15 @@
 /**
  * Lottery C++ Library
- * Filename: Utils.cpp
+ * Filename: utils.cpp
  * 
- * This file contains utility functions
+ * This file contains utility functions implementation
  * 
  * Author: Fábio Silva <fabio.fernando.osilva@gmail.com>
  */
 
 #include <climits>
 #include <cstddef>
+
 #include "lotopp/utils.hpp"
 
 namespace lotopp
