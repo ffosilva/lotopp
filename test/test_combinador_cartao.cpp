@@ -1,3 +1,5 @@
+#undef NDEBUG
+
 #include <iostream>
 #include <cassert>
 

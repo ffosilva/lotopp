@@ -1,3 +1,5 @@
+#undef NDEBUG
+
 #include <iostream>
 #include <cassert>
 
@@ -54,6 +56,26 @@ int main(const int argc, const char **argv)
     it++;
   }
   assert(counter == 8);
+
+  lotopp::cartao cartao2;
+
+  assert((cartao2 != cartao));
+  cartao2.adicionar(1);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(2);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(3);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(4);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(5);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(6);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(7);
+  assert(cartao2 != cartao);
+  cartao2.adicionar(8);
+  assert(cartao2 == cartao);
 
   std::cout << "Done! All tests passed..." << std::endl;
 

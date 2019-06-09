@@ -46,7 +46,8 @@ size_t cartao::quantidade_dezenas()
   return _numeros.size();
 }
 
-bool cartao::contains(dezena_t val) {
+bool cartao::contains(dezena_t val)
+{
   return _numeros.find(val) != _numeros.end();
 }
 
@@ -70,7 +71,8 @@ cartao::reverse_iterator cartao::rend()
   return _numeros.rend();
 }
 
-dezena_t cartao::operator[](int index) {
+dezena_t cartao::operator[](int index)
+{
   cartao::iterator it = this->begin();
   std::advance(it, index);
 
@@ -82,5 +84,15 @@ cartao &cartao::operator<<(dezena_t const dezena)
   this->adicionar(dezena);
 
   return *this;
+}
+
+bool cartao::operator==(cartao const other)
+{
+  return other._numeros == this->_numeros;
+}
+
+bool cartao::operator!=(cartao const other)
+{
+  return other._numeros != this->_numeros;
 }
 } // namespace lotopp

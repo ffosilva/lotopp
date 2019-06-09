@@ -54,6 +54,8 @@ public:
 
   dezena_t operator[](int index);
   cartao &operator<<(dezena_t const dezena);
+  bool operator==(cartao const other);
+  bool operator!=(cartao const other);
 };
 } // namespace lotopp
 
