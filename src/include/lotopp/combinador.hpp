@@ -12,6 +12,8 @@
 
 #include <mutex>
 
+#include "lotopp/types.hpp"
+
 namespace lotopp
 {
 class combinador
@@ -28,7 +30,7 @@ public:
 
     void reset();
     int num_combinacoes();
-    int next(unsigned int *next);
+    int next(dezena_t *next);
 };
 } // namespace lotopp
 

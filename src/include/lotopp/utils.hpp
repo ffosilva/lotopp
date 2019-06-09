@@ -10,6 +10,8 @@
 #ifndef LOTOPP_UTILS_HPP
 #define LOTOPP_UTILS_HPP
 
+#include "lotopp/types.hpp"
+
 #include <cstddef>
 
 namespace lotopp
@@ -25,8 +27,8 @@ namespace lotopp
  */
 unsigned long comb(unsigned long n, unsigned long k);
 
-unsigned int ordx(unsigned int *idx, size_t idx_len);
-unsigned int xord(unsigned int sk, unsigned int *idx, size_t idx_len);
+unsigned int ordx(dezena_t *idx, size_t idx_len);
+unsigned int xord(unsigned int sk, dezena_t *idx, size_t idx_len);
 } // namespace lotopp
 
 #endif // LOTOPP_UTILS_HPP

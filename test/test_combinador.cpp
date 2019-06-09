@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cassert>
 
+#include "lotopp/types.hpp"
 #include "lotopp/combinador.hpp"
 
 #define TAMANHO_CART 15
@@ -8,7 +9,7 @@
 
 int main(const int argc, const char **argv)
 {
-  unsigned int dezenas[TAMANHO_CART];
+  dezena_t dezenas[TAMANHO_CART];
 
   lotopp::combinador c(QTDE_DEZENAS, TAMANHO_CART);
 

@@ -69,7 +69,7 @@ unsigned long comb(unsigned long n, unsigned long k)
   return r;
 }
 
-unsigned int ordx(unsigned int *idx, size_t idx_len)
+unsigned int ordx(dezena_t *idx, size_t idx_len)
 {
   unsigned int s = 0;
   unsigned int j = 1;
@@ -98,7 +98,7 @@ unsigned int ordx(unsigned int *idx, size_t idx_len)
   return s;
 }
 
-static unsigned int sord(unsigned int sk, unsigned int *idx, size_t idx_len)
+static unsigned int sord(unsigned int sk, dezena_t *idx, size_t idx_len)
 {
   if (idx_len == 0)
   {
@@ -146,7 +146,7 @@ static unsigned int sord(unsigned int sk, unsigned int *idx, size_t idx_len)
   return 0;
 }
 
-unsigned int xord(unsigned int sk, unsigned int *idx, size_t idx_len)
+unsigned int xord(unsigned int sk, dezena_t *idx, size_t idx_len)
 {
   unsigned int return_val = sord(sk, idx, idx_len);
 

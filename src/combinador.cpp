@@ -9,6 +9,7 @@
 
 #include <mutex>
 
+#include "lotopp/types.hpp"
 #include "lotopp/utils.hpp"
 #include "lotopp/combinador.hpp"
 
@@ -34,7 +35,7 @@ void combinador::reset()
   _mtx_posicao_atual.unlock();
 }
 
-int combinador::next(unsigned int *next)
+int combinador::next(dezena_t *next)
 {
   _mtx_posicao_atual.lock();
   int pos = _posicao_atual++;

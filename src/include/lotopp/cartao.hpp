@@ -11,8 +11,9 @@
 #define LOTOPP_CARTAO_HPP
 
 #include <cstddef>
-
 #include <set>
+
+#include "lotopp/types.hpp"
 
 namespace lotopp
 {
@@ -33,22 +34,26 @@ private:
   template <typename T1, typename T2>
   size_t intersection_size(const T1 &s1, const T2 &s2);
 
-  std::set<unsigned int> _numeros;
+  std::set<dezena_t> _numeros;
 
 public:
-  cartao(unsigned int *dezenas = NULL, size_t dezenas_len = 0);
+  cartao(dezena_t *dezenas = NULL, size_t dezenas_len = 0);
 
-  bool adicionar(unsigned int dezena);
+  bool adicionar(dezena_t dezena);
   size_t acertos(cartao *other);
   size_t quantidade_dezenas();
-  bool contains(unsigned int dezena);
-  std::set<unsigned int>::iterator begin();
-  std::set<unsigned int>::iterator end();
-  std::set<unsigned int>::reverse_iterator rbegin();
-  std::set<unsigned int>::reverse_iterator rend();
+  bool contains(dezena_t dezena);
 
-  unsigned int operator[](int index);
-  cartao &operator<<(unsigned int const dezena);
+  typedef typename std::set<dezena_t>::iterator iterator;
+  typedef typename std::set<dezena_t>::reverse_iterator reverse_iterator;
+
+  iterator begin();
+  iterator end();
+  reverse_iterator rbegin();
+  reverse_iterator rend();
+
+  dezena_t operator[](int index);
+  cartao &operator<<(dezena_t const dezena);
 };
 } // namespace lotopp
 

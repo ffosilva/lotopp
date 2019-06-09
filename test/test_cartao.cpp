@@ -47,7 +47,7 @@ int main(const int argc, const char **argv)
   assert(cartao.quantidade_dezenas() == 8);
 
   int counter = 0;
-  std::set<unsigned int>::iterator it = cartao.begin();
+  lotopp::cartao::iterator it = cartao.begin();
   while (it != cartao.end())
   {
     counter++;

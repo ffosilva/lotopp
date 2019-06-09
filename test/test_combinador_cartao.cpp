@@ -9,7 +9,7 @@
 
 int main(const int argc, const char **argv)
 {
-  unsigned int dezenas[TAMANHO_CART];
+  dezena_t dezenas[TAMANHO_CART];
 
   lotopp::combinador c(QTDE_DEZENAS, TAMANHO_CART);
 
