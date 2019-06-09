@@ -10,6 +10,8 @@
 #ifndef LOTOPP_UTILS_HPP
 #define LOTOPP_UTILS_HPP
 
+#include <cstddef>
+
 namespace lotopp
 {
 /**
