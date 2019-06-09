@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-
 project(lotopp CXX)
+
+set(CMAKE_MODULE_PATH "${lotopp_SOURCE_DIR}/cmake")
+
+include(BuildType)
 
 set(LOTOPP_SRC_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(LOTOPP_TEST_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/test)
