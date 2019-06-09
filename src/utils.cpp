@@ -9,7 +9,7 @@
 
 #include <climits>
 #include <cstddef>
-#include "lotopp/Utils.hpp"
+#include "lotopp/utils.hpp"
 
 namespace lotopp
 {

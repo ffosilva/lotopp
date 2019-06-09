@@ -1,6 +1,6 @@
 /**
  * Lottery C++ Library
- * Filename: Utils.hpp
+ * Filename: utils.hpp
  * 
  * This file contains utility functions
  * 

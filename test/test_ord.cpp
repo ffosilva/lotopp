@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-#include "lotopp/Utils.hpp"
+#include "lotopp/utils.hpp"
 
 int main(const int argc, const char **argv)
 {
