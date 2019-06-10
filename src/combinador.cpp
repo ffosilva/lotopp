@@ -35,6 +35,11 @@ void combinador::reset()
   _mtx_posicao_atual.unlock();
 }
 
+int combinador::get(dezena_t *buff, size_t idx)
+{
+  return lotopp::xord(idx, buff, _tamanho_cartao);
+}
+
 int combinador::next(dezena_t *next)
 {
   _mtx_posicao_atual.lock();
@@ -44,7 +49,7 @@ int combinador::next(dezena_t *next)
   if (pos >= _num_combinacoes)
     return -1;
 
-  lotopp::xord(pos, next, _tamanho_cartao);
+  get(next, pos);
 
   return 0;
 }

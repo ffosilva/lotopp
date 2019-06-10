@@ -30,6 +30,7 @@ public:
 
     void reset();
     int num_combinacoes();
+    int get(dezena_t *next, size_t id);
     int next(dezena_t *next);
 };
 } // namespace lotopp
