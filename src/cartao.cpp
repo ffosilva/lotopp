@@ -9,6 +9,7 @@
 
 #include <algorithm>
 #include <cstddef>
+#include <iomanip>
 
 #include "lotopp/cartao.hpp"
 
@@ -69,6 +70,21 @@ cartao::reverse_iterator cartao::rbegin()
 cartao::reverse_iterator cartao::rend()
 {
   return _numeros.rend();
+}
+
+std::ostream &operator<<(std::ostream &os, cartao &c)
+{
+  cartao::iterator it = c.begin();
+
+  for (size_t i = 0; i < (c.quantidade_dezenas() - 1); i++)
+  {
+    os << std::setfill('0') << std::setw(2) << *it << "-";
+    it++;
+  }
+
+  os << std::setfill('0') << std::setw(2) << *it;
+
+  return os;
 }
 
 dezena_t cartao::operator[](int index)

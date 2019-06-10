@@ -12,6 +12,8 @@
 
 #include <cstddef>
 #include <set>
+#include <ostream>
+#include <string>
 
 #include "lotopp/types.hpp"
 
@@ -51,6 +53,8 @@ public:
   iterator end();
   reverse_iterator rbegin();
   reverse_iterator rend();
+
+  friend std::ostream &operator<<(std::ostream &os, cartao &c);
 
   dezena_t operator[](int index);
   cartao &operator<<(dezena_t const dezena);
